@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FixTrack</string>
+    <string name="descripcion_averia">Descripción de la avería...</string>
+    <string name="estado_pendiente">PENDIENTE</string>
+    <string name="fecha">2026-06-06</string>
+    <string name="nombre_cliente">Nombre del Cliente</string>
+    <string name="titulo">¡Panel Principal de FixTrack!</string>
+    <string name="descripcion_onboarding">Gestiona tus partes de trabajo, clientes y artículos de forma rápida y eficiente, tanto con conexión como en modo offline.</string>
+    <string name="texto_boton_onboarding">Comenzar</string>
+    <string name="titulo_onboarding">Bienvenido a FixTrack</string>
+    <string name="logotipo_fixtrack">Logotipo FixTrack</string>
+    <string name="titulo_nuevo_parte">Nuevo Parte de Trabajo</string>
+    <string name="nombre_cliente_parte">Nombre o Razón Social del Cliente</string>
+    <string name="descripcion_averia_parte">Descripción detallada de la avería</string>
+    <string name="boton_guardar_parte">Guardar Parte</string>
+    <string name="titulo_login">FixTrack Técnicos</string>
+    <string name="email_login">Correo electrónico</string>
+    <string name="pass_login">Contraseña</string>
+    <string name="boton_login">Iniciar Sesión</string>
+    <string name="boton_finalizar_parte">Finalizar Parte</string>
+    <string name="borrar_firma">Borrar Firma</string>
+    <string name="conformidad_del_cliente_firma">Conformidad del Cliente (Firma)</string>
+</resources>
