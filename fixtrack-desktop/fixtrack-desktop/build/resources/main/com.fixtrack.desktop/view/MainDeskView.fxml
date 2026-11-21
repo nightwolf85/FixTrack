@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.fixtrack.desktop.controller.MainDeskController"
+      prefHeight="500.0" prefWidth="800.0" spacing="10" style="-fx-padding: 20;">
+
+    <Label text="Panel de Administración - FixTrack SAT" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <TableView fx:id="tablePartes" prefHeight="400.0" prefWidth="760.0">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="60.0"/>
+            <TableColumn fx:id="colCliente" text="Cliente" prefWidth="200.0"/>
+            <TableColumn fx:id="colDescripcion" text="Descripción de la Avería" prefWidth="320.0"/>
+            <TableColumn fx:id="colEstado" text="Estado" prefWidth="150.0"/>
+        </columns>
+    </TableView>
+
+</VBox>

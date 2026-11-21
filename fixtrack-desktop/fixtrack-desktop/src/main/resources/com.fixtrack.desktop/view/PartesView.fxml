@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.fixtrack.desktop.controller.PartesController"
+      spacing="15" style="-fx-padding: 20;">
+
+    <Label text="Gestión y Asignación de Partes de Trabajo" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <VBox spacing="10">
+        <HBox spacing="10">
+            <TextField fx:id="txtIdCliente" promptText="ID Cliente" prefWidth="140"/>
+            <TextField fx:id="txtIdTecnico" promptText="ID Técnico Asignado" prefWidth="160"/>
+            <Button text="Crear y Asignar Parte" onAction="#crearYAsignarParte"/>
+        </HBox>
+        <TextArea fx:id="txtDescripcionAveria" promptText="Descripción detallada de la avería..." prefRowCount="3"/>
+    </VBox>
+
+    <Label fx:id="lblMensaje"/>
+
+    <TableView fx:id="tablePartes" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="60"/>
+            <TableColumn fx:id="colCliente" text="Cliente" prefWidth="180"/>
+            <TableColumn fx:id="colDescripcion" text="Avería" prefWidth="260"/>
+            <TableColumn fx:id="colTecnico" text="Técnico" prefWidth="140"/>
+            <TableColumn fx:id="colEstado" text="Estado" prefWidth="110"/>
+        </columns>
+    </TableView>
+
+    <Button text="Exportar Albarán PDF" onAction="#exportarAlbaranPdf"/>
+</VBox>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:controller="com.fixtrack.desktop.controller.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- MENÚ LATERAL (SIDEBAR) -->
+    <left>
+        <VBox BorderPane.alignment="CENTER" prefWidth="200.0" style="-background-color: #2c3e50;">
+            <children>
+                <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#cargarDashboard" prefHeight="40.0" prefWidth="200.0" style="-background-color: transparent;" text="📊 Dashboard" textFill="WHITE"/>
+                <Button fx:id="btnClientes" mnemonicParsing="false" onAction="#cargarClientes" prefHeight="40.0" prefWidth="200.0" style="-background-color: transparent;" text="👥 Clientes" textFill="WHITE"/>
+                <Button fx:id="btnAlmacen" mnemonicParsing="false" onAction="#cargarAlmacen" prefHeight="40.0" prefWidth="200.0" style="-background-color: transparent;" text="📦 Almacén" textFill="WHITE"/>
+                <Button fx:id="btnPartes" mnemonicParsing="false" onAction="#cargarPartes" prefHeight="40.0" prefWidth="200.0" style="-background-color: transparent;" text="🛠️ Partes de Trabajo" textFill="WHITE"/>
+            </children>
+        </VBox>
+    </left>
+
+    <!-- CONTENEDOR CENTRAL DINÁMICO -->
+    <center>
+        <StackPane BorderPane.alignment="CENTER" fx:id="contentArea" prefHeight="150.0" prefWidth="200.0" style="-background-color: #ecf0f1;"/>
+    </center>
+
+</BorderPane>

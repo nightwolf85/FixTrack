@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.fixtrack.desktop.controller.AlmacenController"
+      spacing="15" style="-fx-padding: 20;">
+
+    <Label text="Gestión de Almacén y Repuestos" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <GridPane hgap="10" vgap="10">
+        <TextField fx:id="txtCodigo" promptText="Código (ej. REP-001)" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="txtDescripcion" promptText="Descripción del repuesto" prefWidth="250" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <TextField fx:id="txtPrecio" promptText="Precio (€)" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="txtStock" promptText="Stock inicial" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button text="Añadir Artículo" onAction="#guardarArticulo" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+    </GridPane>
+
+    <Label fx:id="lblMensaje"/>
+
+    <TableView fx:id="tableArticulos" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colCodigo" text="Código" prefWidth="120"/>
+            <TableColumn fx:id="colDescripcion" text="Descripción" prefWidth="320"/>
+            <TableColumn fx:id="colPrecio" text="Precio (€)" prefWidth="110"/>
+            <TableColumn fx:id="colStock" text="Stock Actual" prefWidth="110"/>
+        </columns>
+    </TableView>
+</VBox>
